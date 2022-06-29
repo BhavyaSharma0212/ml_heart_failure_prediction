@@ -1,0 +1,50 @@
+{% extends 'partials/base.html' %}
+{% block title %}All Predictions{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-6">
+            <table class="table table-striped table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Sex</th>
+                    <th scope="col">ChestPainType</th>
+                    <th scope="col">RestingBP</th>
+                    <th scope="col">Cholestrol</th>
+                    <th scope="col">FastingBS</th>
+                    <th scope="col">RestingECG</th>
+                    <th scope="col">MaxHR</th>
+                    <th scope="col">ExerciseAngina</th>
+                    <th scope="col">OldPeak</th>
+                    <th scope="col">ST_Slope</th>
+                    <th >Result 0:No Risk 1:High Risk</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for data in predicted_result %}
+                  <tr>
+                    <th scope="row">{{ data.name }}</th>
+                    <td>{{ data.age }}</td>
+                    <td>{{ data.sex }}</td>
+                    <td>{{ data.chestpaintype }}</td>
+                    <td>{{ data.restingbp }}</td>
+                    <td>{{ data.cholestrol }}</td>
+                    <td>{{ data.fastingbs }}</td>
+                    <td>{{ data.restingecg }}</td>
+                    <td>{{ data.maxhr }}</td>
+                    <td>{{ data.exerciseangina }}</td>
+                    <td>{{ data.oldpeak }}</td>
+                    <td>{{ data.stslope }}</td>
+                    <td>{{ data.predictions }}</td>
+
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
