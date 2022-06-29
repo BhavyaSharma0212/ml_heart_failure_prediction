@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)*+)hz^9w^=(7jqq20im$&!o(@l!0h2==af@@25r=2nefhxmtn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','heart-failure-prediction-rslt.herokuapp.com']
 
 
 # Application definition
