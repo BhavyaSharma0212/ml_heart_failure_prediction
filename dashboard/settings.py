@@ -15,7 +15,7 @@ import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
 
@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-)*+)hz^9w^=(7jqq20im$&!o(@l!0h2==af@@25r=2nefhxmtn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','heart-failure-prediction-rslt.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
